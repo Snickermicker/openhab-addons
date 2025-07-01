@@ -1,0 +1,44 @@
+<config-description:config-descriptions
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:config-description="https://openhab.org/schemas/config-description/v1.0.0"
+	xsi:schemaLocation="https://openhab.org/schemas/config-description/v1.0.0 https://openhab.org/schemas/config-description-1.0.0.xsd">
+
+	<config-description uri="thing-type:veluxactive:account">
+		<parameter name="username" type="text" required="true">
+			<label>Username</label>
+			<description>Velux active logoin username</description>
+		</parameter>
+		<parameter name="password" type="text" required="true">
+			<label>Password</label>
+			<description>Velux active login password</description>
+			<context>password</context>
+		</parameter>
+		<parameter name="clientID" type="text" required="true">
+			<label>Client ID</label>
+			<description>Velux active client ID</description>
+		</parameter>
+		<parameter name="clientSecret" type="text" required="true">
+			<label>Client Secret</label>
+			<description>Velux active client secret</description>
+		</parameter>
+		<parameter name="appVersion" type="text" required="true">
+			<label>App version to use</label>
+			<description>Velux active app version</description>
+		</parameter>
+		<parameter name="refreshIntervalNormal" type="integer" min="2" required="false" unit="s">
+			<label>Refresh Interval (Normal)</label>
+			<description>Specifies the refresh interval in seconds</description>
+			<default>30</default>
+		</parameter>
+		<parameter name="refreshIntervalQuick" type="integer" min="2" required="false" unit="s">
+			<label>Refresh Interval (Quick)</label>
+			<description>Specifies time in seconds to wait after successful update, command or action before refresh</description>
+			<default>5</default>
+		</parameter>
+		<parameter name="apiTimeout" type="integer" min="2" required="false" unit="s">
+			<label>API Timeout</label>
+			<description>Time in seconds to allow API request to complete</description>
+			<default>22</default>
+		</parameter>
+	</config-description>
+</config-description:config-descriptions>

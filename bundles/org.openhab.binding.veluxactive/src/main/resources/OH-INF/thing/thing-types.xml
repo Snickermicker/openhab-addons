@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="veluxactive"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:thing="https://openhab.org/schemas/thing-description/v1.0.0"
+	xsi:schemaLocation="https://openhab.org/schemas/thing-description/v1.0.0 https://openhab.org/schemas/thing-description-1.0.0.xsd">
+
+	<!-- THING TYPE ACCOUNT -->
+	<bridge-type id="account">
+		<label>Velux Active Account</label>
+		<description>Represents an account at Velux Active</description>
+		<config-description-ref uri="thing-type:veluxactive:account"/>
+	</bridge-type>
+	<!-- THING TYPE DEVICE -->
+	<bridge-type id="devices">
+		<label>Velux Active Devices</label>
+		<description>Represents a device at Velux Active</description>
+		<config-description-ref uri="thing-type:veluxactive:devices"/>
+	</bridge-type>
+
+</thing:thing-descriptions>
